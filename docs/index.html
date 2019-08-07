@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Mañana o Tarde</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-8">
+        <h1>Mañana o Tarde?</h1>
+        <p class="parrafo">
+          Introduce el Año <input type="number" id="yearCaja" min=“1985” max=“2060” placeholder="Introduce Año" />
+        </p>
+        <p class="parrafo">
+          Introduce mes <input type="number" id="mesCaja" min=“1” max=“12” placeholder="Introduce Nº de Mes" />
+        </p>
+        <p class="parrafo">
+          Introduce el día del mes <input type="number" id="diaCaja" min=“1” max=“31” placeholder="Introduce dia del mes" />
+        </p>
+        <p class="parrafo">
+          <input class="btn" type="button" value="Resultado" id="irTotal" onclick="probar()" />
+        </p>
+        <p class="resultado alert alert-success mt-3" id="resultado">
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Scripts-->
+  <script src='js/xDate.js' type="text/javascript"></script>
+  <script src='js/mañanaTarde.js' type="text/javascript"></script>
+</body>
+
+</html>
